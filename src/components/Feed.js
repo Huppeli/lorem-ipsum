@@ -5,6 +5,7 @@ import { Typography } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import FakeData from '../Data/FakeData';
+import FakeSeasonalData from '../Data/FakeSeasonalData';
 import ChallengeCard from './ChallengeCard/ChallengeCard';
 import TopBar from './TopBar';
 
@@ -17,7 +18,11 @@ const Feed = () =>
         {FakeData.map( (challenge) =>
             <ChallengeCard title={challenge.title}></ChallengeCard>
         )}
-
+        <Typography variant="h6">Seasonal Challenges</Typography>
+        {console.log(FakeSeasonalData)}
+        {FakeSeasonalData.map( (challenge) =>
+            <ChallengeCard title={challenge.title} joined={challenge.joined}></ChallengeCard>
+        )}
 
     </div>
     ;

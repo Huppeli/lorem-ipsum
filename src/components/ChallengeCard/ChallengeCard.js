@@ -13,10 +13,17 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert'; 
+import { Button } from '@material-ui/core';
 
 
 class ChallengeCard extends React.Component {
     render() {
+
+        let button;
+        if(this.props.joined) {
+            button = <Button variant="outlined">Join!</Button>
+        }
+
         return(
           <Card style={{margin:'15px'}}>
                 <CardHeader
@@ -27,16 +34,10 @@ class ChallengeCard extends React.Component {
                 }
                 title={this.props.title}
                 />
-                <CardMedia
-                image="/static/images/cards/paella.jpg"
-                title="Paella dish"
-                />
-             
-                <Collapse  timeout="auto" unmountOnExit>
                 <CardContent>
-                  
+                    {button}
                 </CardContent>
-                </Collapse>
+                
             </Card>
         );
     }
