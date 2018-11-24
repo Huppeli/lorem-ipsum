@@ -9,7 +9,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import LockIcon from '@material-ui/icons/LockOutlined';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import logo from '../resources/images/Kesko-logo.png';
+import logo from '../../resources/images/Kesko-logo.png';
 import Grid from '@material-ui/core/Grid';
 import {Link} from 'react-router-dom';
 

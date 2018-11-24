@@ -11,10 +11,24 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Button } from '@material-ui/core';
 import logo from '../../resources/images/Kesko-logo.png';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import ConfirmationDialog from '../Dialog/ConfirmationDialog';
 
 
 
 class ChallengeCard extends React.Component {
+    state = {
+        open: false,
+      };
+    
+      handleClickOpen = () => {
+        this.setState({ open: true });
+      };
+    
+      handleClose = () => {
+        this.setState({ open: false });
+      };
+    
+
     render() {
 
         let button;
@@ -23,7 +37,7 @@ class ChallengeCard extends React.Component {
             button = <Button variant="outlined">Join!</Button>
         }
         if(this.props.progress == 100) {
-            completeButton =  <Button variant="outlined">Finish challenge</Button>
+            completeButton =  <Button variant="outlined" onClick={this.handleClickOpen}>Finish challenge</Button>
         }
         
         return(
@@ -45,6 +59,7 @@ class ChallengeCard extends React.Component {
                 <CardContent>
                 <LinearProgress variant="determinate" value={this.props.progress} />
                     {completeButton}
+                    <ConfirmationDialog open={this.state.open} handleClose={this.handleClose} />
                     {button}
                 </CardContent>
                 

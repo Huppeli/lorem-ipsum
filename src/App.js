@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import Login from './components/Login';
-import Feed from './components/Feed';
-import Index from './components/Index';
+import Login from './components/screens/Login';
+import Feed from './components/screens/Feed';
+import Index from './components/screens/Index';
 import './App.css';
 
 import AppBar from '@material-ui/core/AppBar';
