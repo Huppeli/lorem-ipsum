@@ -22,12 +22,12 @@ const Feed = () =>
         <Typography variant="h6">Ongoing Challenges</Typography>
         {console.log(FakeData)}
         {FakeData.map( (challenge) =>
-            <ChallengeCard title={challenge.title}></ChallengeCard>
+            <ChallengeCard title={challenge.title} progress={challenge.progress}></ChallengeCard>
         )}
         <Typography variant="h6">Seasonal Challenges</Typography>
         {console.log(FakeSeasonalData)}
         {FakeSeasonalData.map( (challenge) =>
-            <ChallengeCard title={challenge.title} joined={challenge.joined}></ChallengeCard>
+            <ChallengeCard title={challenge.title} joined={challenge.joined} progress={challenge.progress}></ChallengeCard>
         )}
             <BottomBar/>
     </div>

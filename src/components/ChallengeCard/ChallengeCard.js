@@ -7,23 +7,25 @@ import Avatar from '@material-ui/core/Avatar';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import red from '@material-ui/core/colors/red';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert'; 
 import { Button } from '@material-ui/core';
 import logo from '../../resources/images/Kesko-logo.png';
+import LinearProgress from '@material-ui/core/LinearProgress';
+
 
 
 class ChallengeCard extends React.Component {
     render() {
 
         let button;
+        let completeButton;
         if(this.props.joined) {
             button = <Button variant="outlined">Join!</Button>
         }
-
+        if(this.props.progress == 100) {
+            completeButton =  <Button variant="outlined">Finish challenge</Button>
+        }
+        
         return(
           <Card style={{margin:'15px'}}>
                 <CardHeader
@@ -41,6 +43,8 @@ class ChallengeCard extends React.Component {
                 title={this.props.title}
                 />
                 <CardContent>
+                <LinearProgress variant="determinate" value={this.props.progress} />
+                    {completeButton}
                     {button}
                 </CardContent>
                 
