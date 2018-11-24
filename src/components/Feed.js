@@ -6,24 +6,16 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import FakeData from '../Data/FakeData';
 import ChallengeCard from './ChallengeCard/ChallengeCard';
+import TopBar from './TopBar';
 
 
 const Feed = () => 
     <div>
-        <AppBar position="static" color="#122559">
-            <Toolbar>
-                <IconButton>
-                    <MenuIcon />
-                </IconButton>
-                <Typography variant="h6" style={{color: "#FF6704"}}>
-                    Challenges
-                </Typography>            
-            </Toolbar>
-        </AppBar>
-        <Typography style={{marginLeft: '25px'}} variant="h4">Ongoing Challenges</Typography>
+       <TopBar/>
+        <Typography variant="h6">Ongoing Challenges</Typography>
         {console.log(FakeData)}
         {FakeData.map( (challenge) =>
-            <ChallengeCard title={challenge.title} />
+            <ChallengeCard title={challenge.title}></ChallengeCard>
         )}
 
 
