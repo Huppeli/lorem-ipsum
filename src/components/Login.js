@@ -34,7 +34,7 @@ const Login = () =>
                 <TextField secondary id="password" label="password" type="password"  variant="outlined" />
             </Grid>
             <Grid  item xs={12}> 
-                <Link to="/Feed">
+                <Link to="/Index">
                     <Button style={{background: '#AEB5C8'}} >Log in</Button>
                 </Link>
             </Grid>
