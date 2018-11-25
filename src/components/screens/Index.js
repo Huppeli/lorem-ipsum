@@ -17,15 +17,10 @@ const Index = () =>
                 Welcome to your highlights!
                 </Typography>
             </Toolbar>
-<<<<<<< HEAD
-          </AppBar>
-        <Typography style={{marginLeft: '25px'}} variant="h6">Highlights</Typography>
-=======
         </AppBar>
         <Typography variant="h4" style={{color:"#000000", marginLeft: "20%", fontWeight: "bold"}}>Highlights</Typography>
->>>>>>> d3c02494dac2c00096fb4b797376a0a5455d1f0b
-        <InfoGraph title="Your consumption of domestic products is 28%" difference="+5 % average" />
-        <InfoGraph title="Your estimated carbon footprint based on your consumption is 28%" difference="-25 % below average" />
+        <InfoGraph title="Your consumption of domestic products is 28%" difference="-5 % below national average" />
+        <InfoGraph title="Your estimated carbon footprint based on your consumption is 28%" difference="-25 % below neational average" />
         <BottomBar/>
     </div>
     ;

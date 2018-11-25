@@ -32,10 +32,10 @@ import ConfirmationDialog from '../Dialog/ConfirmationDialog';
 
 const Profile = () => 
     <div>
-        <AppBar position="static" color="default">
+         <AppBar position="static" backgroundColor="#213775">
             <Toolbar>
-                <Typography variant="h6" color="inherit">
-                K Appi
+                <Typography variant="h6" style={{color:"#ffffff", marginLeft: "10%", fontWeight: "bold"}} >
+                Welcome to your profile!
                 </Typography>
             </Toolbar>
         </AppBar>
@@ -45,8 +45,6 @@ const Profile = () =>
                 <Avatar>
                     J
                 </Avatar>
-                
-                
             }
             action={
                 <IconButton>
@@ -59,19 +57,19 @@ const Profile = () =>
                 Your monthly basket consists of:
                 <div>
                     Meat
-                    <LinearProgress variant="determinate" value="60" />
+                    <LinearProgress variant="determinate" color="secondary" value="60" />
                 </div>
                 <div>
                     Veggies
-                    <LinearProgress variant="determinate" value="70" />
+                    <LinearProgress variant="determinate" color="secondary" value="70" />
                 </div>
                 <div>
                     Dairy
-                    <LinearProgress variant="determinate" value="50" />
+                    <LinearProgress variant="determinate" color="secondary" value="50" />
                 </div>
                 <div>
                     Fruit
-                    <LinearProgress variant="determinate" value="25" />
+                    <LinearProgress variant="determinate" color="secondary" value="25" />
                 </div>
             </CardContent>
         </Card>
