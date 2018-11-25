@@ -15,10 +15,10 @@ class BottomBar extends React.Component {
                 bottom: 0,
                 width: '100%',
                 background: '#eeeeee'}} >
-                <Link to="/profile">
+                <Link style={{width:'33%'}} to="/profile">
                     <BottomNavigationAction label="Profile" icon={<FaceIcon />} />
                 </Link>
-                <Link to="/feed">
+                <Link style={{width: '33%'}} to="/feed">
                     <BottomNavigationAction label="Favorites" icon={<ListIcon />} />
                 </Link>
                 <Link to="/index">
