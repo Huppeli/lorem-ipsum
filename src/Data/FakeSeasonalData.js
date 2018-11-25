@@ -1,13 +1,13 @@
 const FakeSeasonalData = [{
     id: 0,
-    title: "Apples are cheap now challenge",
+    title: "Eat more veggies",
     progress: 25,
     joined: false
 },
 {
     id: 1,
     title: "Apples are cheap now challenge",
-    progress: 25,
+    progress: 0,
     joined: true   
 }
 ]
