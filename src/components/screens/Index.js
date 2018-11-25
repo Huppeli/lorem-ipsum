@@ -18,7 +18,7 @@ const Index = () =>
               </Typography>
             </Toolbar>
           </AppBar>
-        <Typography style={{marginLeft: '25px'}} variant="h4">Highlights</Typography>
+        <Typography style={{marginLeft: '25px'}} variant="h6">Highlights</Typography>
         <InfoGraph title="Your consumption of domestic products is 28%" difference="+5 % average" />
         <InfoGraph title="Your estimated carbon footprint based on your consumption is 28%" difference="-25 % below average" />
         <BottomBar/>
