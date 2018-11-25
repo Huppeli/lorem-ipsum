@@ -27,15 +27,15 @@ const Login = () =>
             <Grid  item xs={12}>
                 <Typography component="h5" variant="h5">Login</Typography>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} borderRadius="10">
                 <TextField margin="normal" id="name" label="Name" disabled  variant="outlined" />
             </Grid>
             <Grid  item xs={12}>
                 <TextField secondary id="password" label="password" type="password"  variant="outlined" />
             </Grid>
-            <Grid  item xs={12}> 
+            <Grid  item xs={12} style={{borderRadius: 20}}> 
                 <Link to="/Index">
-                    <Button style={{background: '#AEB5C8'}} >Log in</Button>
+                    <Button style={{background: '#AEB5C8', borderRadius: 20}} >Log in</Button>
                 </Link>
             </Grid>
         </form>

@@ -7,10 +7,10 @@ class ChallengeCard extends React.Component {
         return(
             <div>
                 <Paper elevation={5} style={{margin:'15px'}}>
-                    <Typography variant="subtitle1" >
+                    <Typography style={{color:"#000000", marginLeft: '8px'}}variant="subtitle1" >
                         {this.props.title}
                     </Typography>
-                    <Typography variant="subtitle2">
+                    <Typography  style={{color:"#000000", marginLeft: '8px'}} variant="subtitle2">
                         {this.props.difference}
                     </Typography>
                 </Paper>

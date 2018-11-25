@@ -34,15 +34,15 @@ class ChallengeCard extends React.Component {
         let button;
         let completeButton;
         if(this.props.joined) {
-            button = <Button variant="outlined">Join!</Button>
+            button = <Button variant="outlined" style={{borderRadius: 20, backgroundColor:'#eeeeee', marginTop: 10}}>Join!</Button>
         }
         if(this.props.progress == 100) {
-            completeButton =  <Button variant="outlined" onClick={this.handleClickOpen}>Finish challenge</Button>
+            completeButton =  <Button variant="outlined" style={{ borderRadius: 20, backgroundColor:'#eeeeee',marginTop: 10}} onClick={this.handleClickOpen}>Finish challenge</Button>
         }
         
         return(
-          <Card style={{margin:'15px'}}>
-                <CardHeader
+          <Card style={{margin:'15px', backgroundColor: '#EC7B04'}}>
+                <CardHeader style={{color: '#213775'}}
                 avatar={
                     <Avatar
                     src={logo}
@@ -56,8 +56,8 @@ class ChallengeCard extends React.Component {
                 }
                 title={this.props.title}
                 />
-                <CardContent>
-                <LinearProgress variant="determinate" value={this.props.progress} />
+                <CardContent root={{color: '#213775'}}>
+                <LinearProgress style={{bar: {backgroundColor: '#213775'}}} variant="determinate" value={this.props.progress} />
                     {completeButton}
                     <ConfirmationDialog open={this.state.open} handleClose={this.handleClose} />
                     {button}
