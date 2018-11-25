@@ -2,9 +2,9 @@ import React from 'react';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
-
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import FaceIcon from '@material-ui/icons/Face';
+import ListIcon from '@material-ui/icons/List';
+import StarIcon from '@material-ui/icons/Star';
 import {Link} from 'react-router-dom';
 
 class BottomBar extends React.Component {
@@ -16,13 +16,13 @@ class BottomBar extends React.Component {
                 width: '100%',
                 background: '#eeeeee'}} >
                 <Link to="/profile">
-                    <BottomNavigationAction label="Profile" icon={<RestoreIcon />} />
+                    <BottomNavigationAction label="Profile" icon={<FaceIcon />} />
                 </Link>
                 <Link to="/feed">
-                    <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
+                    <BottomNavigationAction label="Favorites" icon={<ListIcon />} />
                 </Link>
                 <Link to="/index">
-                    <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+                    <BottomNavigationAction label="Nearby" icon={<StarIcon />} />
                 </Link>
             </BottomNavigation>
         );
