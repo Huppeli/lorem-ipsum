@@ -12,19 +12,19 @@ import BottomBar from '../BottomBar/BottomBar';
 
 const Feed = () => 
     <div>
-        <AppBar position="static" color="default">
+        <AppBar position="static" backgroundColor="#213775">
             <Toolbar>
-                <Typography variant="h6" color="inherit">
-                K Appi
+                <Typography variant="h6" style={{color:"#ffffff", marginLeft: "10%", fontWeight: "bold"}} >
+                Welcome to your dashboard!
                 </Typography>
             </Toolbar>
         </AppBar>
-        <Typography variant="h6">Ongoing Challenges</Typography>
+        <Typography variant="h6" style={{color:"#000000", marginLeft: "20%", fontWeight: "bold"}}>Ongoing Challenges</Typography>
         {console.log(FakeData)}
         {FakeData.map( (challenge) =>
             <ChallengeCard title={challenge.title} progress={challenge.progress}></ChallengeCard>
         )}
-        <Typography variant="h6">Seasonal Challenges</Typography>
+        <Typography variant="h6" style={{color:"#000000", marginLeft: "20%", fontWeight: "bold"}}>Seasonal Challenges</Typography>
         {console.log(FakeSeasonalData)}
         {FakeSeasonalData.map( (challenge) =>
             <ChallengeCard title={challenge.title} joined={challenge.joined} progress={challenge.progress}></ChallengeCard>

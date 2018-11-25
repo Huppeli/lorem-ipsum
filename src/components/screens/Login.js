@@ -51,9 +51,9 @@ const Login = () =>
                 <Input style={{color: '#eeeeee'}} type="password" id="component-simple" value={"1234567"}/>
             </FormControl>
             </Grid>
-            <Grid  item xs={12}> 
+            <Grid  item xs={12} style={{borderRadius: 20}}> 
                 <Link to="/Index">
-                    <Button style={{background: '#AEB5C8'}} >Log in</Button>
+                    <Button style={{background: '#AEB5C8', borderRadius: 20}} >Log in</Button>
                 </Link>
             </Grid>
         </form>
